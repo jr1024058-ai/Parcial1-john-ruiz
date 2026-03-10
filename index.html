@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Compuservis</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+ <body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+
+   <a class="navbar-brand">Cátalogo de Servicios Digitales</a>
+
+   <ul class="navbar-nav ms-auto">
+
+   <li class="nav-item">
+   <a class="nav-link active" href="#">Inicio</a>
+   </li>
+
+   <li class="nav-item">
+   <a class="nav-link" href="#Servicios">Servicios</a>
+   </li>
+
+   <li class="nav-item">
+   <a class="nav-link" href="#contacto">Contacto</a>
+   </li>
+
+   <li class="nav-item">
+   <span class="nav-link">lista servicios <span id="contadorLista">0</span>
+   </li>
+
+   </ul>
+
+  </div>
+  </nav>
+
+<header class="container mt-4 text-center">
+
+   <h1>Bienvenidos a Compuservis</h1>
+
+    <p id="descripcion">
+      Los mejores programadores y técnicos de la región
+    </p>
+
+    <button class="btn btn-secondary" onclick="modoOscuro()">
+      Modo oscuro 
+    
+    </button>
+   
+</header>
+
+
+<section class="container mt-5" id="Servicios">
+
+    <h2 class="text-center mb-4">Servicios</h2>
+
+     <div class="row g-4">
+
+     <div class="col-md-4 servicio">
+     <div class="card h-100">
+     <img src="assets/desarrollo web.jfif" class="card-img-top" >
+     <div class="card-body text-center">
+    <h5>desarrollo web</h5>
+     <p>Las mejores paginas web</p>
+     <button class="btn btn-success" onclick="agregarLista('Servicios web')">
+       Solicitar servicio
+     </button>
+  </div>
+ </div>
+</div>
+
+
+<div class="col-md-4 servicio">
+<div class="card h-100">
+<img src="assets/hosting.png" class="card-img-top" >
+<div class="card-body text-center">
+<h5>hosting</h5>
+<p>Los mejores hosts</p>
+<button class="btn btn-success" onclick="agregarLista('Hosting')">
+Solicitar servicio
+</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4 servicio">
+<div class="card h-100">
+<img src="assets/diseño ux ui.jfif" class="card-img-top" >
+<div class="card-body text-center">
+<h5>Diseños UX/UI</h5>
+<p>Las mejores experiencias</p>
+<button class="btn btn-success" onclick="agregarLista('Diseños UX/UI')">
+Solicitar servicio
+</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4 servicio">
+<div class="card h-100">
+<img src="assets/marketing.jfif" class="card-img-top">
+<div class="card-body text-center">
+<h5>Marketing Digital</h5>
+<p>las mejores publicaciones</p>
+<button class="btn btn-success" onclick="agregarLista('Marketing Digital')">
+Solicitar servicio
+</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4 servicio">
+<div class="card h-100">
+<img src="assets/seo.png" class="card-img-top">
+<div class="card-body text-center">
+<h5>SEO</h5>
+<p>Optimización a otro nivel</p>
+<button class="btn btn-success" onclick="agregarLista('SEO')">
+Solicitar servicio
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 servicio">
+<div class="card h-100">
+<img src="assets/soporte tecnico.jfif" class="card-img-top">
+<div class="card-body text-center">
+<h5>soporte tecnico</h5>
+<p>Los más confiables</p>
+<button class="btn btn-success" onclick="agregarLista('Soporte tecnico)">
+Solicitar servicio
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 servicio">
+<div class="card h-100">
+<img src="assets/consultoria tecnologica.jfif" class="card-img-top">
+<div class="card-body text-center">
+<h5>Consultoria tecnológica</h5>
+<p>tus mejores aliados</p>
+<button class="btn btn-success" onclick="agregarLista('Consultoria tecnologica')">
+Solicitar servicio
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 servicio">
+<div class="card h-100">
+<img src="assets/desarrollo movil.jfif" class="card-img-top">
+<div class="card-body text-center">
+<h5>desarrollo movil</h5>
+<p>Las mejores apks</p>
+<button class="btn btn-success" onclick="agregarLista('desarrollo movil')">
+Solicitar servicio
+</button>
+</div>
+</div>
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="container mt-5" id="contacto">
+
+<h2 class="text-center mb-4">Contacto</h2>
+
+<form id="formContacto">
+
+<input type="text" id="nombre" placeholder="Nombre" class="form-control mb-2">
+
+<input type="text" id="apellido" placeholder="Apellido" class="form-control mb-2">
+
+<input type="email" id="correo" placeholder="Correo" class="form-control mb-2">
+
+<input type="email" id="con_correo" placeholder="Confirmar Correo" class="form-control mb-2">
+
+<input type="number" id="edad" placeholder="Edad" class="form-control mb-2">
+
+<select id="genero" class="form-control mb-2">
+<option value="">Selecciona tu género...</option>
+<option value="masculino">Masculino</option>
+<option value="femenino">Femenino</option>
+<option value="otro">Otro</option>
+</select>
+
+<select id="Servicio de interes" class="form-control mb-2">
+<option value="">Selecciona tu servicio de interés...</option>
+<option value="presencial">presencial</option>
+<option value="remoto">Remoto</option>
+<option value="mixto">mixto</option>
+</select>
+
+<input type="text" id="direccion" placeholder="Dirección" class="form-control mb-2">
+
+<input type="text" id="telefono" placeholder="Teléfono" class="form-control mb-2">
+
+<textarea id="mensaje" class="form-control mb-2" placeholder="Mensaje (Opcional)"></textarea>
+
+<button type="button" class="btn btn-primary" onclick="enviarFormulario()">
+Enviar
+</button>
+
+</form>
+
+</section>
+
+
+<script src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
